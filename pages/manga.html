@@ -6,12 +6,85 @@
     <meta name="description" content="Manga site to search, view Manga and its content">
     <meta name="keywords" content="HTML,CSS,JSON,JavaScript">
     <meta name="author" content="Safery Hossain, Lina Radwan">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/main.css" rel="stylesheet">
+
   </head>
+
   <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+         <img src="../img/logo2.png" style="width:100px;height:50px;">
+          <strong>LISA</strong>
+          </a>
+         <input type="text" name="search" placeholder="Search..">
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <div class="col-md-auto" id="mangaHeaderPictureColumn">
+            <svg viewBox="0 0 1320 300">
+              <!-- Symbol -->
+              <symbol id="s-text">
+                <text y="50%">
+                  Title
+                </text>
+              </symbol>
+              <!-- COLORS symbols -->
+              <use xlink:href="#s-text" class="text"></use>
+              <use xlink:href="#s-text" class="text"></use>
+              <use xlink:href="#s-text" class="text"></use>
+              <use xlink:href="#s-text" class="text"></use>
+              <use xlink:href="#s-text" class="text"></use>
+            </svg>
 
 
+
+
+
+            <div id="coverImage">
+              <img class="stacked" src="http://placekitten.com/250/300">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Lina Radwan has read this!</p>
+        <center><img src="../img/linaVerified.png" alt="Lina has read this and verified it!" width="100" height="100"></center>
+      </div>
+    </footer>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
   </body>
   <footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </footer>
 </html>
