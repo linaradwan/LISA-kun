@@ -12,6 +12,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/manga.css" rel="stylesheet">
 
   </head>
 
@@ -29,43 +30,67 @@
     </header>
 
     <main role="main">
-      <section class="jumbotron text-center">
         <div class="container">
-          <div class="col-md-auto" id="mangaHeaderPictureColumn">
-            <svg viewBox="0 0 1320 300">
-              <!-- Symbol -->
-              <symbol id="s-text">
-                <text y="50%">
-                  Title
-                </text>
-              </symbol>
-              <!-- COLORS symbols -->
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-            </svg>
-
-
-
-
-
-            <div id="coverImage">
-              <img class="stacked" src="http://placekitten.com/250/300">
+          <div class="row">
+            <div class="col">
+                <p data-text="Naruto" class="method-1" id="mangaTitles">Naruto</p>
+              <div class='stackone'>
+                 <img src="http://via.placeholder.com/225x300.png" />
+              </div>
+            </div>
+            <div class="col-6" id="descBox">
+              <p id="artistName"><b> Artist: </b> Kashimoto Hakazuki</p>
+              <p id="totalChapter"><b> Total Chapters: </b> 300</p>
+              <p><b> Release Date: </b> 2005</p>
+              <p><b> Status: </b> Finished</p>
+              <p><b> Populartiy: </b> 25354234</p>
+              <p><b> description: </b> Twelve years ago, the powerful Nine-Tailed Demon Fox attacked the ninja village of Konohagakure. The demon was quickly defeated and sealed into the infant Naruto Uzumaki, by the Fourth Hokage who sacrificed his life to protect the village. Now Naruto is the number one knucklehead ninja who's determined to become the next Hokage and gain recognition by everyone who ever doubted him! Note: Has been nominated for the 19th Tezuka Osamu Cultural Prize and won the "Rookie of the Year" award in the media fine arts category by the Agency for Cultural Affairs in 2015.</p>
+              <div id="categoryList">
+                <a href="">Shounen</a>
+                <a href="">Comedy</a>
+                <a href="">Fantasy</a>
+                <a href="">Adventure</a>
+              </div>
+            </div>
+            <div class="col">
             </div>
           </div>
-        </div>
-      </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-
+          <div class="row">
+            <table class="table table-hover" id="chapterList">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Chapter Name</th>
+                  <th scope="col">Date Published</th>
+                  <th scope="col">View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Begin</td>
+                  <td>December 11, 1996</td>
+                  <td><button type="button" class="btn btn-default">Read Now</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Where is Naruto</td>
+                  <td>December 11, 1996</td>
+                  <td><button type="button" class="btn btn-default">Read Now</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Who is Naruto?</td>
+                  <td>December 11, 1996</td>
+                  <td><button type="button" class="btn btn-default">Read Now</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
     </main>
 
-    <footer class="text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
@@ -83,8 +108,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
   </body>
   <footer>
     <script src="../js/main.js"></script>
+    <script src="../js/manga.js"></script>
   </footer>
 </html>
