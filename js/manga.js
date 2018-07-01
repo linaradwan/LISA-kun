@@ -37,9 +37,18 @@ function changeChapter(chapterLength){
   titleElement.innerHTML= "<b> Total Chapters: </b> " + chapterLength;
 }
 
+function changeCover(imageCover){
+  var titleElement = document.getElementById("mangaImageCover");
+  titleElement.setAttribute("src", imageCover);
+  titleElement.setAttribute("width", "225px");
+  titleElement.setAttribute("height", "300px");
+
+}
+
 function parseData(json){
   console.log(json);
-
+  // Change image manga cover
+  changeCover(json["imageURL"]);
   // Change title
   changeTitle(json["title"]);
 
