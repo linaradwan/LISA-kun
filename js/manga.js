@@ -100,7 +100,7 @@ function generateTable(chapterArray){
   var tbody = document.getElementById("chapterTable");
   for(row = 0; row < chapterArray.length; row++){
     var convertPublishDate = timeConverter(chapterArray[row][1]);
-    var createPublishButton = '<button type="button" id="' + chapterArray[row][3] + '" class="btn btn-default">Read Now</button>';
+    var createPublishButton = '<button type="button" id="' + chapterArray[row][3] + '" class="btn btn-default" onClick="javascript:window.location.href=\'view.html?ID=' + chapterArray[row][3] + '&pageID=0\'">Read Now</button>';
     var columnsValue = { 1:chapterArray[row][2], 2:convertPublishDate, 3:createPublishButton };
     var tr = document.createElement("tr");
     for (column = 0; column < 4; column++){
