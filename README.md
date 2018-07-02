@@ -1,5 +1,5 @@
 
-[![LOGO IN PROGRESS](https://i.imgur.com/5sHN73G.png)](#)
+[![LOGO IN PROGRESS](https://i.imgur.com/5sHN73G.png)](https://linaradwan.github.io/LISA-kun/index.html)
 
 
 [![Coverage Status](https://img.shields.io/badge/Manga-19695%2B-green.svg)](#)
