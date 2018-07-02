@@ -41,15 +41,11 @@
             <div class="col-6" id="descBox">
               <p id="artistName"><b> Artist: </b> Kashimoto Hakazuki</p>
               <p id="totalChapter"><b> Total Chapters: </b> 300</p>
-              <p><b> Release Date: </b> 2005</p>
-              <p><b> Status: </b> Finished</p>
-              <p><b> Populartiy: </b> 25354234</p>
-              <p><b> description: </b> Twelve years ago, the powerful Nine-Tailed Demon Fox attacked the ninja village of Konohagakure. The demon was quickly defeated and sealed into the infant Naruto Uzumaki, by the Fourth Hokage who sacrificed his life to protect the village. Now Naruto is the number one knucklehead ninja who's determined to become the next Hokage and gain recognition by everyone who ever doubted him! Note: Has been nominated for the 19th Tezuka Osamu Cultural Prize and won the "Rookie of the Year" award in the media fine arts category by the Agency for Cultural Affairs in 2015.</p>
+              <p id="releaseDate"><b> Release Date: </b> 2005</p>
+              <p id="airingStatus"><b> Status: </b> Finished</p>
+              <p id="popularityList"><b> Populartiy: </b> 25354234</p>
+              <p id="desc"><b> description: </b> Twelve years ago, the powerful Nine-Tailed Demon Fox attacked the ninja village of Konohagakure. The demon was quickly defeated and sealed into the infant Naruto Uzumaki, by the Fourth Hokage who sacrificed his life to protect the village. Now Naruto is the number one knucklehead ninja who's determined to become the next Hokage and gain recognition by everyone who ever doubted him! Note: Has been nominated for the 19th Tezuka Osamu Cultural Prize and won the "Rookie of the Year" award in the media fine arts category by the Agency for Cultural Affairs in 2015.</p>
               <div id="categoryList">
-                <a href="">Shounen</a>
-                <a href="">Comedy</a>
-                <a href="">Fantasy</a>
-                <a href="">Adventure</a>
               </div>
             </div>
             <div class="col">
@@ -57,7 +53,7 @@
           </div>
 
           <div class="row">
-            <table class="table table-hover" id="chapterList">
+            <table class="table table-hover sortable" id="chapterList">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -66,25 +62,8 @@
                   <th scope="col">View</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Begin</td>
-                  <td>December 11, 1996</td>
-                  <td><button type="button" class="btn btn-default">Read Now</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Where is Naruto</td>
-                  <td>December 11, 1996</td>
-                  <td><button type="button" class="btn btn-default">Read Now</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Who is Naruto?</td>
-                  <td>December 11, 1996</td>
-                  <td><button type="button" class="btn btn-default">Read Now</button></td>
-                </tr>
+              <tbody id="chapterTable">
+
               </tbody>
             </table>
           </div>
@@ -114,5 +93,6 @@
   <footer>
     <script src="../js/main.js"></script>
     <script src="../js/manga.js"></script>
+    <script src="../libs/sorttable.js"></script>
   </footer>
 </html>
