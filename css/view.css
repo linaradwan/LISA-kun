@@ -1,3 +1,36 @@
 #selectPagesList{
   margin-top: 5%;
 }
+
+#arrowRight {
+  padding-right:1%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  visibility: hidden;
+}
+
+#arrowLeft {
+  padding-left: 1%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 88%;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  visibility: hidden;
+}
+
+#arrowRight {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -
+}

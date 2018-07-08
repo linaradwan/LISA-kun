@@ -4,14 +4,9 @@ var mangaID = url.searchParams.get("mangaID");
 
 generateMangaDetail(mangaID);
 
-
-
 function generateMangaDetail(mangaID){
   getJSONFromURL("https://www.mangaeden.com/api/manga/", mangaID);
-  // Test manga id 4e70ea03c092255ef70046f0
-
 }
-
 
 function getJSONFromURL(url, id){
   $.ajax({
@@ -36,7 +31,6 @@ function timeConverter(UNIX_timestamp){
   return time;
 }
 
-
 function changeTitle(title){
   var titleElement = document.getElementById("mangaTitles");
   titleElement.setAttribute("data-text", title);
@@ -58,27 +52,22 @@ function changeCover(imageCover){
   titleElement.setAttribute("src", imageCover);
   titleElement.setAttribute("width", "225px");
   titleElement.setAttribute("height", "300px");
-
 }
 
 function changeReleaseDate(Unixtime){
   var titleElement = document.getElementById("releaseDate");
   titleElement.innerHTML= "<b> Release Date: </b>" + timeConverter(Unixtime);
-
 }
 
 function changeStatusType(type){
   var titleElement = document.getElementById("airingStatus");
   var types = { 0:"Running", 1:"Stopped", 2:"Finished" };
-
   titleElement.innerHTML = "<b> Status: </b> " + types[type];
-
 }
 
 function changePopularityRating(hits){
   var titleElement = document.getElementById("popularityList");
   titleElement.innerHTML= "<b> Popularity: </b>" + hits + " users have read";
-
 }
 
 function changeDesc(desc){
@@ -121,10 +110,8 @@ function generateTable(chapterArray){
   // Make the table sortable
   newTableObject = document.getElementById("chapterList");
   sorttable.makeSortable(newTableObject);
-
   var myTH = document.getElementsByTagName("th")[0];
   sorttable.innerSortFunction.apply(myTH, []);
-
 }
 
 function parseData(json){
@@ -133,22 +120,14 @@ function parseData(json){
   changeCover(json["imageURL"]);
   // Change title
   changeTitle(json["title"]);
-
   // Change artist
   changeArist(json["artist"]);
-
   // Change total chapter
   changeChapter(json["chapters_len"])
-
   changeReleaseDate(json["created"]);
-
   changeStatusType(json["status"]);
-
   changePopularityRating(json["hits"]);
-
   changeDesc(json["description"]);
-
   changeListOfCat(json["categories"]);
-
   generateTable(json["chapters"])
 }

@@ -48,8 +48,8 @@
   color: #d4d4d4;
   margin-left: 30%;
   margin-bottom: -70%;
-
 }
+
 .method-1:before {
   content: attr(data-text);
   position: absolute;
