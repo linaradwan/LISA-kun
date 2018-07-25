@@ -160,3 +160,5 @@ We can use Lina'API when DOM is being loaded on front page to give us the most p
 
 ***How do we determine what are the most popular manga read in Lisa?***
 Everytime a user reads Manga on Lisa-Kun, Lisa will send a POST to incrementManga function, which will increment the MangaID the user currently has session onto. This will increase the popularity of that Manga such that next time user goes back to the front page, getMostPopularManga will return the new changes.
+
+Nice try but its not in this change 
