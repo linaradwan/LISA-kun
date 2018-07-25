@@ -150,6 +150,9 @@ Since the website is written in JavaScript, we want to keep it that way. We do n
 **So we will start using another API.**
 We are calling it Lina'API. What is Lina'API? It will pretty much contain information that MangaEden.API does not contain. Lina'API will use information from MangaEden and generate other useful rest call that we can use to determine other neat stats.
 
+**What is the final puzzle to Lina 'surprise'?**
+I am surprised you managed to come this far (not really, you are a smart girl). I am something you use everyday, you lost me, you had me used by others and I am also in your kitchen. When you use me, you empty me fast. 
+
 **How do we get "Most Popular Manga"?**
 Lina'API will contain two GET request.
 
@@ -160,5 +163,3 @@ We can use Lina'API when DOM is being loaded on front page to give us the most p
 
 ***How do we determine what are the most popular manga read in Lisa?***
 Everytime a user reads Manga on Lisa-Kun, Lisa will send a POST to incrementManga function, which will increment the MangaID the user currently has session onto. This will increase the popularity of that Manga such that next time user goes back to the front page, getMostPopularManga will return the new changes.
-
-Nice try but its not in this change 
