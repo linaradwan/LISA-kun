@@ -30,4 +30,25 @@ $( document ).ready(function() {
         source: allMangaTitle
     });
 
+    $("#mangaSearchFieldBox").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $('#exampleModal').modal('show');
+            clearAllPreviousSearchResult();
+            searchResult();
+            // LINA PUT THE FUNCTION THAT GENERATES THE SEARCH RESULTS BELOW HERE!!!
+        }
+    });
 });
+
+function searchResult(){
+  var searchStringFromTopBar = document.getElementById("mangaSearchFieldBox").value;
+  if (searchStringFromTopBar != ""){
+    var title = document.getElementById("exampleModalLabel");
+    title.innerHTML = "<center>Search result for " + searchStringFromTopBar + "</center>";
+
+  }
+}
+
+function clearAllPreviousSearchResult(){
+  $("#allSearchResultDiv").html("");
+}
