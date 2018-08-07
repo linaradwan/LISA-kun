@@ -1,3 +1,4 @@
+var allMangaTitle = ["lina"];
 
 function showTop(str) {
         xmlhttp = new XMLHttpRequest();
@@ -11,12 +12,22 @@ function showTop(str) {
         xmlhttp.send();
     }
 
-var allMangaTitle = [
-    "Naruto",
-    "Naruto Shippuden",
-    "Naruto: Movie 1",
-    "Naruto: The ninja return",
-    "Who is Naruto?"];
-$("#mangaSearchFieldBox").autocomplete({
-    source: allMangaTitle
+
+$( document ).ready(function() {
+  // Get the json response of all the manga titles.
+    $.ajax({
+      dataType: "json",
+      url: "https://www.mangaeden.com/api/list/0/",
+      success: function(data) {
+          //console.log(data['manga'][0]["t"]);
+          for (var i = 0; i < data['manga'].length; i++) {
+               allMangaTitle.push(data['manga'][i]["t"]);
+           }
+        }
+    });
+
+    $("#mangaSearchFieldBox").autocomplete({
+        source: allMangaTitle
+    });
+
 });
